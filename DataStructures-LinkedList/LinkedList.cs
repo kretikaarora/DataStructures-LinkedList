@@ -133,15 +133,38 @@ namespace DataStructures_LinkedList
         /// Removing the first element 
         /// UC5
         /// </summary>
-        public void Pop()
+        public void PopFirst()
         {
             ///removing the element by shifting the head
             if(this.head==null)
             {
                 Console.WriteLine("no element found , linkedlist is empty");
+                return;
             }
             Console.WriteLine("the element poped out is {0}",head.data);
             this.head = this.head.next;
+        }
+        /// <summary>
+        /// Poping the last node
+        /// UC6
+        /// </summary>
+        public void PopLast()
+        {
+            ///checking if head is null or not
+            /// otherwise declaring temp equal to head and iterating till we reach last third node
+            /// pointing the last second to null
+            /// to remove the last node
+            if (this.head == null)
+            {
+                Console.WriteLine("no element found , linkedlist is empty");
+                return;
+            }
+            Node temp = this.head;
+            while (temp.next.next != null) 
+            {
+                temp = temp.next;
+            }
+            temp.next = null;
         }
     }
 }
