@@ -106,5 +106,25 @@ namespace DataStructures_LinkedList
             }
 
         }
+        /// <summary>
+        /// Inserting data in between nodes
+        /// </summary>
+        /// <param name="newData"></param>
+        public void InsertInBetween(int newData)
+        {
+            ///Creating a new node
+            ///Iterating temp till it reaches the node after which you want to insert
+            ///Creating a link with that node
+            Console.WriteLine("Insert the node data you want insert after");
+            int addData = Convert.ToInt32(Console.ReadLine());
+            Node newNode = new Node(newData);
+            Node temp = this.head;
+            while (temp.data!=addData)
+            {
+                temp = temp.next;
+            }
+            newNode.next = temp.next;
+            temp.next = newNode;
+        }
     }
 }
