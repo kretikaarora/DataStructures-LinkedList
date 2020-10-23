@@ -61,7 +61,7 @@ namespace DataStructures_LinkedList
         /// UC2
         /// </summary>
         /// <param name="newData"></param>
-        public void InsertFirst(int newData)
+        public void AppendFirst(int newData)
         {
             ///Creating a new node
             ///if node is empty initailising the new node to head
