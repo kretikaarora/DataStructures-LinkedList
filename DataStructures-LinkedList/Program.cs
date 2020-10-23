@@ -18,10 +18,10 @@ namespace DataStructures_LinkedList
             LinkedList list = new LinkedList();
             list.AppendLast(56);           
             list.AppendLast(70);
-            list.InsertInBetween(30);
+            list.AppendLast(30);
+            list.Search(30);
             list.Display();
-            list.PopLast();
-            list.Display();
+            
 
         }
     }

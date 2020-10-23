@@ -11,7 +11,7 @@ namespace DataStructures_LinkedList
 {   /// <summary>
     /// Creating LinkedList
     /// </summary>
-    class LinkedList
+     public class LinkedList
     {
         public Node head;
 
@@ -138,7 +138,7 @@ namespace DataStructures_LinkedList
             ///removing the element by shifting the head
             if(this.head==null)
             {
-                Console.WriteLine("no element found , linkedlist is empty");
+                Console.WriteLine("no element deleted , linkedlist is empty");
                 return;
             }
             Console.WriteLine("the element poped out is {0}",head.data);
@@ -156,7 +156,7 @@ namespace DataStructures_LinkedList
             /// to remove the last node
             if (this.head == null)
             {
-                Console.WriteLine("no element found , linkedlist is empty");
+                Console.WriteLine("no element deleted , linkedlist is empty");
                 return;
             }
             Node temp = this.head;
@@ -165,6 +165,30 @@ namespace DataStructures_LinkedList
                 temp = temp.next;
             }
             temp.next = null;
+        }
+        /// <summary>
+        /// Searching the data
+        /// UC7
+        /// </summary>
+        /// <param name="searchData"></param>
+        /// <returns></returns>
+        public bool Search(int searchData)
+        {
+            ///searching while iterating temp to null
+            ///if temp matches with the data its returns true and node is present
+            ///otherwise returns false
+            Node temp = this.head;
+            while(temp!=null)
+            {
+                if (temp.data == searchData)
+                {
+                    Console.WriteLine("Node is present");
+                    return true;
+                }                  
+                temp = temp.next;
+            }
+            Console.WriteLine("Node is absent");
+            return false;
         }
     }
 }
