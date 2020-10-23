@@ -166,6 +166,7 @@ namespace DataStructures_LinkedList
             }
             temp.next = null;
         }
+
         /// <summary>
         /// Searching the data
         /// UC7
@@ -189,6 +190,24 @@ namespace DataStructures_LinkedList
             }
             Console.WriteLine("Node is absent");
             return false;
+        }
+
+        /// <summary>
+        /// Deleting the Node
+        /// UC9
+        /// </summary>
+        /// <param name="deleteData"></param>
+        public void Delete(int deleteData)
+        {
+            ///temp will stop at a point where the next data to be deleted 
+            ///then we will break the link with that data
+            Node temp = this.head;
+            while(temp.next.data!=deleteData)
+            {
+                temp = temp.next;                
+            }
+            temp.next = temp.next.next;
+            Console.WriteLine("The Node with data {0} is deleted",deleteData);
         }
     }
 }
