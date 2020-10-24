@@ -17,7 +17,7 @@ namespace DataStructures_LinkedList
 
         /// <summary>
         /// Inserting the node at Last
-        /// UC1
+        /// UC1,UC3
         /// </summary>
         /// <param name="newData"></param>
         public void AppendLast(int newData)
@@ -41,7 +41,7 @@ namespace DataStructures_LinkedList
 
         /// <summary>
         /// Identifying the last Node
-        /// UC1
+        /// UC1,UC3
         /// </summary>
         /// <returns></returns>
         public Node GetLastNode()
@@ -104,7 +104,6 @@ namespace DataStructures_LinkedList
                     temp = temp.next;
                 }
             }
-
         }
     }
 }

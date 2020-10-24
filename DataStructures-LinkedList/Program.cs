@@ -16,9 +16,9 @@ namespace DataStructures_LinkedList
         {
             Console.WriteLine("Operations on LinkedList");
             LinkedList list = new LinkedList();
-            list.AppendFirst(70);
-            list.AppendFirst(30);
-            list.AppendFirst(56);
+            list.AppendLast(56);
+            list.AppendLast(30);
+            list.AppendLast(70);
             list.Display();
 
         }
