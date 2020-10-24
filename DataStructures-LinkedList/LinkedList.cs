@@ -104,10 +104,11 @@ namespace DataStructures_LinkedList
                     temp = temp.next;
                 }
             }
-
         }
+
         /// <summary>
         /// Inserting data in between nodes
+        /// UC4
         /// </summary>
         /// <param name="newData"></param>
         public void InsertInBetween(int newData)
@@ -126,6 +127,21 @@ namespace DataStructures_LinkedList
             newNode.next = temp.next;
             temp.next = newNode;
 
+        }
+
+        /// <summary>
+        /// Removing the first element 
+        /// UC5
+        /// </summary>
+        public void Pop()
+        {
+            ///removing the element by shifting the head
+            if(this.head==null)
+            {
+                Console.WriteLine("no element found , linkedlist is empty");
+            }
+            Console.WriteLine("the element poped out is {0}",head.data);
+            this.head = this.head.next;
         }
     }
 }
