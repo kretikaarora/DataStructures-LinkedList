@@ -104,6 +104,7 @@ namespace DataStructures_LinkedList
                     temp = temp.next;
                 }
             }
+
         }
         /// <summary>
         /// Inserting data in between nodes
@@ -124,6 +125,7 @@ namespace DataStructures_LinkedList
             }
             newNode.next = temp.next;
             temp.next = newNode;
+
         }
     }
 }
