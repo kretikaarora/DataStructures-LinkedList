@@ -12,7 +12,7 @@ namespace DataStructures_LinkedList
     /// <summary>
     /// Creating a Node
     /// </summary>
-    class Node
+    public class Node
     {
         public int data;
         public Node next;
