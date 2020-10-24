@@ -20,7 +20,7 @@ namespace DataStructures_LinkedList
             list.AppendLast(70);
             list.InsertInBetween(30);
             list.Display();
-            list.Pop();
+            list.PopLast();
             list.Display();
 
         }
