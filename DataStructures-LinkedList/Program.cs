@@ -15,12 +15,11 @@ namespace DataStructures_LinkedList
         static void Main(string[] args)
         {
             Console.WriteLine("Operations on LinkedList");
-            LinkedList list = new LinkedList();
-            list.AppendLast(56);           
-            list.AppendLast(30);
-            list.AppendLast(40);
-            list.AppendLast(70);
-            list.Delete(40);
+            LinkedList list = new LinkedList();         
+            list.AddSortedElements(56);
+            list.AddSortedElements(30);
+            list.AddSortedElements(40);
+            list.AddSortedElements(70);
             list.Display();
             
 
